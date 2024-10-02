@@ -1,0 +1,67 @@
+-- GUI creation
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+
+local screenGui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local titleLabel = Instance.new("TextLabel")
+local joinScriptFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local joinScriptTextBox = Instance.new("TextBox")
+local jobIdFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local jobIdTextBox = Instance.new("TextBox")
+local runButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+
+-- Properties
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+frame.Parent = screenGui
+frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+frame.Position = UDim2.new(0.25, 0, 0.25, 0)
+frame.Size = UDim2.new(0.5, 0, 0.5, 0)
+
+UICorner.CornerRadius = UDim.new(0, 8)
+UICorner.Parent = frame
+
+titleLabel.Parent = frame
+titleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+titleLabel.BackgroundTransparency = 1.000
+titleLabel.Position = UDim2.new(0.0526315785, 0, 0.0769230766, 0)
+titleLabel.Size = UDim2.new(0.177418488, 0, 0.107692307, 0)
+titleLabel.Font = Enum.Font.GothamSemibold
+titleLabel.Text = "Main"
+titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+titleLabel.TextScaled = true
+titleLabel.TextSize = 14.000
+titleLabel.TextWrapped = true
+
+joinScriptFrame.Parent = frame
+joinScriptFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+joinScriptFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+joinScriptFrame.Position = UDim2.new(0.0526315785, 0, 0.230769231, 0)
+joinScriptFrame.Size = UDim2.new(0.894736814, 0, 0.15384615, 0)
+
+UICorner_2.CornerRadius = UDim.new(0, 8)
+UICorner_2.Parent = joinScriptFrame
+
+joinScriptTextBox.Parent = joinScriptFrame
+joinScriptTextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+joinScriptTextBox.BackgroundTransparency = 1.000
+joinScriptTextBox.Position = UDim2.new(0.0343137256, 0, 0.230769231, 0)
+joinScriptTextBox.Size = UDim2.new(0.931372583, 0, 0.538461566, 0)
+joinScriptTextBox.Font = Enum.Font.GothamSemibold
+joinScriptTextBox.PlaceholderColor3 = Color3.fromRGB(170, 170, 170)
+joinScriptTextBox.PlaceholderText = "Join Script"
+joinScriptTextBox.Text = ""
+joinScriptTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+joinScriptTextBox.TextScaled = true
+joinScriptTextBox.TextSize = 14.000
+joinScriptTextBox.TextWrapped = true
+
+jobIdFrame.Parent = frame
+jobIdFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
